@@ -1,0 +1,10 @@
+<img src="<%=@actor.image_url%>" alt="Foto">
+<h1><%= @actor.name %></h1>
+<% if @actor.alive == true%>
+<h2><%= @actor.birth_date%></h2>
+<h3><%= @actor.birth_place%></h3>
+<%else%>
+<h2><%= @actor.death_date%></h2>
+<h3><%= @actor.death_place%></h3>
+<%end%>
+<p><%=@actor.bio%></p>
